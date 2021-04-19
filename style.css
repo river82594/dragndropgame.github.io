@@ -194,4 +194,8 @@ box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
     border: 2px green solid;
 }
 
+.ui-draggable, .ui-droppable {
+    -ms-touch-action: none;
+    touch-action: none;
+}
 
