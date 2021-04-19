@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">  
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+    
+    <title>Drag and Drop Program</title>
+</head>
+<script>
+
+
+
+
+
+
+
+// // Premise1
+  $( function() {
+    $( "#premise1" ).draggable({
+      revert: "invalid",
+      snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box1" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise1",
+      drop: function( event, ui ) {
+        $( "#premise1" )
+        .addClass( "ui-widget-content2" )
+        var timeleft = 4;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise1").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise1" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+
+      }
+    });
+} );
+
+
+  // Premise2
+$( function() {
+$( "#premise2" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box2" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise2",
+      drop: function( event, ui ) {
+        $( '#premise2' )
+        .addClass( "ui-widget-content2" )
+        var timeleft = 2;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( '#premise2').draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( '#premise2' ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+
+          
+      }
+    });
+} );
+// Premise3
+$( function() {
+$( "#premise3" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box3" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise3",
+      drop: function( event, ui ) {
+        $( '#premise3' )
+        .addClass( "ui-widget-content2" )
+        var timeleft = 2;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise3").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise3" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+
+          
+      }
+    });
+  } );
+
+  // Premise4
+  $( function() {
+$( "#premise4" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box4" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise4",
+      drop: function( event, ui ) {
+        $( '#premise4' )
+        .addClass( "ui-widget-content2" )
+          var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise4").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise4" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+
+          
+
+      }
+    });
+  } );
+   // Premise5
+   $( function() {
+$( "#premise5" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box5" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise5",
+      drop: function( event, ui ) {
+        $( '#premise5' )
+        .addClass( "ui-widget-content2" )
+          var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise5").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise5" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+      }
+    });
+  } );
+   // Premise6
+   $( function() {
+$( "#premise6" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box6" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise6",
+      drop: function( event, ui ) {
+        $( '#premise6')
+        .addClass( "ui-widget-content2" )
+          var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise6").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise6" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+
+        
+      }
+    });
+  } );
+   // Premise7
+   $( function() {
+$( "#premise7" ).draggable({revert: "invalid",
+snap:'#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box7" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise7",
+      drop: function( event, ui ) {
+        $( '#premise7')
+        .addClass( "ui-widget-content2" )
+          var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise7").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise7" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+
+      }
+    });
+  } );
+   // Premise8
+   $( function() {
+$( "#premise8" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box8" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise8",
+      drop: function( event, ui ) {
+        $( '#premise8')
+        .addClass( "ui-widget-content2" )
+        var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise8").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise8" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+      }
+    });
+  } );
+   // Premise9
+   $( function() {
+$( "#premise9" ).draggable({revert: "invalid",
+snap: '#box1, #box2, #box3,#box4, #box5, #box6, #box7, #box8, #box9',
+      snapMode: 'inner',});
+    $( "#box9" ).droppable({
+        activeClass: "active",  
+        hoverClass:  "hover",
+        accept: "#premise9",
+      drop: function( event, ui ) {
+        $( "#premise9" )
+        .addClass( "ui-widget-content2" )
+        var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            $(function () {
+                $( "#premise9").draggable({
+                    disabled: true,
+                    containment: "parent"
+                }); 
+            });
+        } else {
+            $(function () {
+                $( "#premise9" ).draggable({
+                    disabled: false,
+                    containment: "parent"
+                }); 
+            });
+        }
+        timeleft -= 1;
+        }, 1000);
+      }
+    });
+  } );
+
+
+</script>
+<body>
+<div class="dragNdrop">
+    <h1>Japanese schools' math performance is superior to US schools' performance.</h1>
+</div>
+<div class="cardContainer">
+  <br>
+  <br>
+  <br>
+  <br>
+      <div class="premises">
+        <div class="premise" id="color1">
+          <h5 style="margin-top: -40px;">REASON</h5>
+          <br>
+          <p style="margin-bottom: 35px;">There is greater cultural emphasis on Math in Japan.</p>
+          <ul>
+        <h5 style="margin-top: -5px;">PREMISES</h5>
+        <li id="box1" class="ui-widget-header"></li>
+        <li id="box2" class="ui-widget-header"></li>
+        <li id="box3" class="ui-widget-header"></li>
+        </ul>
+      </div>
+      <div class="premise" id="color2">
+        <h5 style="margin-top: -40px;">REASON</h5>
+        <br>
+        <p style="margin-bottom: 35px;">Japanese students spend more time in school.</p>
+        <ul>
+          <h5 style="margin-top: -5px;">PREMISES</h5>
+          <li id="box4" class="ui-widget-header"></li>
+        <li id="box5" class="ui-widget-header"></li>
+        <li id="box6" class="ui-widget-header"></li>
+        </ul>
+     </div>
+     <div class="premise" id="color3">
+      <h5 style="margin-top: -40px;">REASON</h5>
+      <br>
+      <p style="margin-bottom: 35px;">Teachers teach Math differently in Japan.</p>
+        <ul>
+          <h5 style="margin-top: -5px;">PREMISES</h5>
+          <li id="box7" class="ui-widget-header"></li>
+        <li id="box8" class="ui-widget-header"></li>
+        <li id="box9" class="ui-widget-header"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="answers">
+  <div id="premise8" class="ui-widget-content"><p style="font-size: 18px;">Teachers produce more complex answers</p></div>
+  <div id="premise6" class="ui-widget-content"><p style="font-size: 18px;">Japanese students average 8 hours per month more than US students in school</p></div>
+  <div id="premise3" class="ui-widget-content"><p style="font-size: 18px;">Parents regard Math as important</p></div>
+  <div id="premise4" class="ui-widget-content"><p style="font-size: 18px;">Students take more Math classes</p></div>
+  <div id="premise5" class="ui-widget-content"><p style="font-size: 18px;">Japanese students go to school six days per week</p></div>
+  <div id="premise2" class="ui-widget-content"><p style="font-size: 18px;">Parents motivate children</p></div>
+  <div id="premise7" class="ui-widget-content"><p style="font-size: 18px;">Teachers and students give long explanations</p></div>
+  <div id="premise1" class="ui-widget-content"><p style="font-size: 18px;">Parents provide tutoring</p></div>
+  <div id="premise9" class="ui-widget-content"><p style="font-size: 18px;">Math in Japan has more verbal explanations</p></div>
+</div>
+
+</body>
+</html>
